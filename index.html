@@ -107,6 +107,16 @@
             animation: fadeIn 1.5s ease-out;
         }
 
+        .hero-avatar {
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 50%;
+            border: 2px solid var(--green);
+            padding: 5px;
+            max-width: 150px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
         .hero-intro {
             color: var(--green);
             font-family: var(--font-mono);
@@ -362,7 +372,7 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -370,6 +380,7 @@
     <div class="container">
         
         <section id="hero" class="hero">
+            <img src="avatar.png" alt="Hardik Hariyani Avatar" class="hero-avatar">
             <span class="hero-intro">Hi, my name is</span>
             <h1 class="hero-title">Hardik Hariyani.</h1>
             <h2 class="hero-subtitle">I build systems that serve humanity.</h2>
@@ -495,7 +506,7 @@
                         </div>
                         <h3 class="project-title">Ethical AI Research</h3>
                         <p class="project-desc">
-                            Academic research focusing on the intersection of generative AI and data privacy, applying ISC2 cybersecurity principles to modern AI models.
+                            Academic research and manifesto focusing on the intersection of generative AI and data privacy. We apply ISC2 cybersecurity principles to question modern AI models, advocating for transparency, fairness, and accountability in algorithmic decision-making.
                         </p>
                     </div>
                     <ul class="tech-list">
@@ -545,3 +556,4 @@
 
 </body>
 </html>
+
