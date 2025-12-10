@@ -21,7 +21,7 @@
             --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
         }
 
-        /* GLOBAL RESET - Fixes layout issues */
+        /* GLOBAL RESET */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -30,7 +30,7 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 100px; /* Prevents nav from covering section titles */
+            scroll-padding-top: 100px;
         }
 
         body {
@@ -39,7 +39,7 @@
             font-family: var(--font-sans);
             font-size: 16px;
             line-height: 1.6;
-            overflow-x: hidden; /* Prevents horizontal scroll */
+            overflow-x: hidden;
         }
 
         /* --- CUSTOM SCROLLBAR --- */
@@ -55,7 +55,7 @@
         section { padding: 100px 0; }
         .highlight { color: var(--green); }
 
-        /* --- NAVIGATION (Fixed Layout) --- */
+        /* --- NAVIGATION --- */
         nav {
             display: flex;
             justify-content: space-between;
@@ -65,7 +65,7 @@
             width: 100%;
             top: 0;
             z-index: 100;
-            background: rgba(10, 25, 47, 0.95); /* Slightly darker for readability */
+            background: rgba(10, 25, 47, 0.95);
             backdrop-filter: blur(10px);
             box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
             transition: var(--transition);
@@ -83,17 +83,8 @@
         }
         .logo:hover { background: rgba(100, 255, 218, 0.1); }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-family: var(--font-mono);
-            font-size: 13px;
-            color: var(--light-slate);
-        }
+        .nav-links { display: flex; gap: 30px; list-style: none; }
+        .nav-links a { font-family: var(--font-mono); font-size: 13px; color: var(--light-slate); }
         .nav-links a:hover { color: var(--green); }
 
         /* --- HERO SECTION --- */
@@ -116,10 +107,7 @@
             box-shadow: 0 0 25px rgba(100, 255, 218, 0.2); 
             transition: var(--transition);
         }
-        .hero-avatar:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(100, 255, 218, 0.5);
-        }
+        .hero-avatar:hover { transform: scale(1.05); box-shadow: 0 0 40px rgba(100, 255, 218, 0.5); }
 
         .hero-intro { color: var(--green); font-family: var(--font-mono); margin-bottom: 20px; font-size: 16px; }
         
@@ -129,7 +117,6 @@
             font-weight: 800;
             line-height: 1.1;
             margin: 0;
-            /* Gradient Text Effect */
             background: linear-gradient(90deg, #e6f1ff 0%, #a8b2d1 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -209,7 +196,7 @@
         .job-card:hover {
             transform: translateY(-5px);
             border-left: 4px solid var(--green);
-            background-color: #172a45; /* Slight lighten on hover */
+            background-color: #172a45;
             box-shadow: 0 20px 30px -15px rgba(2,12,27,0.7);
         }
         .job-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px; }
@@ -274,11 +261,11 @@
             nav {
                 padding: 15px 25px;
                 flex-direction: column;
-                position: relative; /* Un-fixes nav on mobile to prevent overlay issues, or keep fixed if preferred */
+                position: relative;
                 gap: 15px;
             }
             .nav-links {
-                display: flex; /* Keeps links visible */
+                display: flex;
                 width: 100%;
                 justify-content: center;
                 gap: 15px;
@@ -289,8 +276,6 @@
             .hero-subtitle { font-size: 30px; }
             .contact-details { flex-direction: column; gap: 15px; }
             .cert-grid { grid-template-columns: 1fr; }
-            
-            /* Center Job Dates on Mobile */
             .job-top { flex-direction: column; align-items: flex-start; }
         }
     </style>
@@ -310,15 +295,15 @@
     <div class="container">
         
         <section id="hero" class="hero">
-            <img src="avatar.png" alt="Hardik Hariyani" class="hero-avatar">
+            <img src="1000031964.jpg" alt="Hardik Hariyani" class="hero-avatar">
 
             <span class="hero-intro">Hi, my name is</span>
             <h1 class="hero-title">Hardik Hariyani.</h1>
             <h2 class="hero-subtitle">Crafting software with purpose.</h2>
             <p class="hero-desc">
-                I'm a Computer Science student and Full Stack Developer based in Arkansas. 
-                I merge robust software engineering with strict operational standards to build 
-                ethical AI and secure web solutions for the non-profit and renewable energy sectors.
+                I'm a Computer Science student and Full Stack Developer based in the <strong>United States</strong>. 
+                My goal is to merge robust software engineering with strict operational standards to build 
+                ethical AI and secure web solutions for the <strong>Higher Education</strong>, non-profit, and renewable energy sectors.
             </p>
             <a href="#contact" class="cta-btn">Get In Touch</a>
         </section>
@@ -520,5 +505,4 @@
 
 </body>
 </html>
-
 
